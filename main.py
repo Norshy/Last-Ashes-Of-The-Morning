@@ -6,18 +6,20 @@ import pygame
 from source.scripts import display
 
 
-# |---- Main code    ------------
-# |------------------------------
-# |---- Starts PyGame -----------
+# |---- Main code    ------------------------------------
+# |------------------------------------------------------
+# |---- Starts PyGame -----------------------------------
 pygame.init()
 
 # |---- Draws the screen and gives the title of it ------------
 game_screen = pygame.display.set_mode((display.default_width, display.default_height))
 pygame.display.set_caption("Last ashes of The Morning")
 
+# |---- Essencial variables ------------
 ingame_clock = pygame.time.Clock()
 isit_running = True
 
+# |---- Main Loop    ------------
 while isit_running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
